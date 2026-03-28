@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --primary: #0b3b78;
@@ -25,6 +26,7 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -194,22 +196,12 @@
       border: 1px solid rgba(255,255,255,0.12);
     }
 
-    .candidate-placeholder {
-      text-align: center;
-      padding: 24px;
-    }
-
-    .candidate-placeholder .circle {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 16px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #ffffff, #dbeafe);
-      color: var(--primary);
-      display: grid;
-      place-items: center;
-      font-size: 42px;
-      font-weight: 800;
+    .candidate-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      filter: contrast(1.05) saturate(1.05);
     }
 
     .stats {
@@ -451,6 +443,7 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
       .hero-grid,
       .grid-2,
       .cta-banner,
@@ -459,12 +452,15 @@
       .values {
         grid-template-columns: 1fr;
       }
+
       .stats {
         grid-template-columns: 1fr;
       }
+
       .nav-links {
         gap: 12px;
       }
+
       .hero {
         padding-top: 60px;
       }
@@ -478,7 +474,9 @@
         <div class="brand-badge">CG</div>
         <div>
           <div>Caleb George Oguta</div>
-          <div style="font-size:12px;color:rgba(255,255,255,0.7);font-weight:500;">Leadership. Service. Transformation.</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.7);font-weight:500;">
+            Leadership. Service. Transformation.
+          </div>
         </div>
       </div>
 
@@ -500,9 +498,11 @@
         <div class="eyebrow">Trusted leadership for a stronger South Nyanza</div>
         <h1>Caleb George Oguta for Member of Parliament</h1>
         <p>
-          A people-first leader committed to inclusive development, youth empowerment, accountable leadership,
-          and practical solutions that improve everyday life for families, farmers, students, traders, and workers.
+          A people-first leader committed to inclusive development, youth empowerment,
+          accountable leadership, and practical solutions that improve everyday life for
+          families, farmers, students, traders, and workers.
         </p>
+
         <div class="hero-actions">
           <a href="#manifesto" class="btn btn-primary">Read the Manifesto</a>
           <a href="#about" class="btn btn-secondary">Know the Leader</a>
@@ -511,13 +511,7 @@
 
       <div class="hero-card">
         <div class="candidate-photo">
-          <div class="candidate-placeholder">
-            <div class="circle">CG</div>
-            <h3 style="margin:0 0 8px;">Candidate Photo Area</h3>
-            <p style="margin:0;color:rgba(255,255,255,0.78);">
-              Replace this section with Caleb George Oguta's official campaign photo for a stronger premium look.
-            </p>
-          </div>
+          <img src="images/caleb.jpg" alt="Caleb George Oguta">
         </div>
 
         <div class="stats">
@@ -544,7 +538,8 @@
         <div class="tag">About Caleb</div>
         <h2>A leader shaped by service, integrity, and commitment to the people</h2>
         <p>
-          Caleb George Oguta represents a new generation of bold, accessible, and accountable leadership rooted in community needs and driven by real results.
+          Caleb George Oguta represents a new generation of bold, accessible, and accountable
+          leadership rooted in community needs and driven by real results.
         </p>
       </div>
 
@@ -552,15 +547,18 @@
         <div class="card">
           <h3>Personality</h3>
           <p>
-            Caleb is approachable, firm, focused, and development-oriented. He believes leadership must be visible,
-            compassionate, and answerable to the people. He values listening, teamwork, and solutions that uplift every corner of the constituency.
+            Caleb is approachable, firm, focused, and development-oriented. He believes
+            leadership must be visible, compassionate, and answerable to the people.
+            He values listening, teamwork, and solutions that uplift every corner of the constituency.
           </p>
         </div>
+
         <div class="card">
           <h3>Leadership Style</h3>
           <p>
-            His leadership style is grounded in consultation, transparency, inclusivity, and decisive action. He seeks to unite generations,
-            empower the youth, support women and families, and champion opportunities for everyone.
+            His leadership style is grounded in consultation, transparency, inclusivity,
+            and decisive action. He seeks to unite generations, empower the youth,
+            support women and families, and champion opportunities for everyone.
           </p>
         </div>
       </div>
@@ -571,16 +569,19 @@
           <h3>Education</h3>
           <p>Championing quality learning, bursaries, and improved school support systems.</p>
         </div>
+
         <div class="highlight">
           <div class="icon">👨‍🌾</div>
           <h3>Farmers</h3>
           <p>Supporting agriculture, market access, value addition, and household income growth.</p>
         </div>
+
         <div class="highlight">
           <div class="icon">🧑‍💼</div>
           <h3>Youth Jobs</h3>
           <p>Promoting skills, enterprise, digital opportunities, and dignified livelihoods.</p>
         </div>
+
         <div class="highlight">
           <div class="icon">🏥</div>
           <h3>Healthcare</h3>
@@ -596,7 +597,8 @@
         <div class="tag">Vision & Mission</div>
         <h2>A clear promise for transformation</h2>
         <p>
-          The campaign is built on inclusive growth, responsible use of public resources, and measurable development that reaches ordinary citizens.
+          The campaign is built on inclusive growth, responsible use of public resources,
+          and measurable development that reaches ordinary citizens.
         </p>
       </div>
 
@@ -604,14 +606,17 @@
         <div class="card">
           <h3>Vision</h3>
           <p>
-            To build a prosperous, secure, united, and empowered constituency where every person has a fair chance to thrive,
-            every family can access opportunity, and every voice matters in leadership.
+            To build a prosperous, secure, united, and empowered constituency where every
+            person has a fair chance to thrive, every family can access opportunity,
+            and every voice matters in leadership.
           </p>
         </div>
+
         <div class="card">
           <h3>Mission</h3>
           <p>
-            To provide servant leadership that delivers development, accountability, dignity, and practical solutions through partnership with the people,
+            To provide servant leadership that delivers development, accountability,
+            dignity, and practical solutions through partnership with the people,
             institutions, youth, women, farmers, workers, and business communities.
           </p>
         </div>
@@ -625,7 +630,8 @@
         <div class="tag">Manifesto</div>
         <h2>The people’s agenda for a stronger constituency</h2>
         <p>
-          This manifesto focuses on the areas that directly affect everyday life: jobs, education, healthcare, agriculture, infrastructure, and good governance.
+          This manifesto focuses on the areas that directly affect everyday life:
+          jobs, education, healthcare, agriculture, infrastructure, and good governance.
         </p>
       </div>
 
@@ -633,32 +639,55 @@
         <article class="manifesto-item">
           <span>PILLAR 01</span>
           <h3>Education First</h3>
-          <p>Expand bursary access, strengthen school infrastructure, support staffing advocacy, and promote equal learning opportunities for all children.</p>
+          <p>
+            Expand bursary access, strengthen school infrastructure, support staffing advocacy,
+            and promote equal learning opportunities for all children.
+          </p>
         </article>
+
         <article class="manifesto-item">
           <span>PILLAR 02</span>
           <h3>Youth Empowerment</h3>
-          <p>Create pathways for jobs, internships, digital skills, innovation hubs, sports development, and youth-led enterprise support.</p>
+          <p>
+            Create pathways for jobs, internships, digital skills, innovation hubs,
+            sports development, and youth-led enterprise support.
+          </p>
         </article>
+
         <article class="manifesto-item">
           <span>PILLAR 03</span>
           <h3>Healthcare Access</h3>
-          <p>Strengthen local health facilities, improve maternal and child care, and advocate for better equipment, medicines, and staffing.</p>
+          <p>
+            Strengthen local health facilities, improve maternal and child care,
+            and advocate for better equipment, medicines, and staffing.
+          </p>
         </article>
+
         <article class="manifesto-item">
           <span>PILLAR 04</span>
           <h3>Roads, Water & Power</h3>
-          <p>Push for improved roads, safe water access, rural electrification, and better infrastructure that unlocks local economic growth.</p>
+          <p>
+            Push for improved roads, safe water access, rural electrification,
+            and better infrastructure that unlocks local economic growth.
+          </p>
         </article>
+
         <article class="manifesto-item">
           <span>PILLAR 05</span>
           <h3>Agriculture & Trade</h3>
-          <p>Support farmers with training, inputs, value chains, storage, market linkages, and stronger local business environments.</p>
+          <p>
+            Support farmers with training, inputs, value chains, storage,
+            market linkages, and stronger local business environments.
+          </p>
         </article>
+
         <article class="manifesto-item">
           <span>PILLAR 06</span>
           <h3>Transparent Leadership</h3>
-          <p>Promote accountability, regular public engagement, responsible oversight, and participatory development planning.</p>
+          <p>
+            Promote accountability, regular public engagement, responsible oversight,
+            and participatory development planning.
+          </p>
         </article>
       </div>
     </div>
@@ -670,7 +699,8 @@
         <div class="tag">Background & Qualifications</div>
         <h2>Experience, preparation, and public trust</h2>
         <p>
-          This section positions Caleb as a credible leader with the values, knowledge, and public-minded outlook needed for parliamentary leadership.
+          This section positions Caleb as a credible leader with the values,
+          knowledge, and public-minded outlook needed for parliamentary leadership.
         </p>
       </div>
 
@@ -678,29 +708,47 @@
         <div class="timeline">
           <div class="timeline-item">
             <h3>Community Engagement</h3>
-            <p>Consistent engagement with local needs, grassroots concerns, and people-centered development conversations.</p>
+            <p>
+              Consistent engagement with local needs, grassroots concerns,
+              and people-centered development conversations.
+            </p>
           </div>
+
           <div class="timeline-item">
             <h3>Leadership Exposure</h3>
-            <p>Experience in mobilization, policy engagement, teamwork, and leadership platforms that strengthen decision-making and service delivery.</p>
+            <p>
+              Experience in mobilization, policy engagement, teamwork,
+              and leadership platforms that strengthen decision-making and service delivery.
+            </p>
           </div>
+
           <div class="timeline-item">
             <h3>Development Focus</h3>
-            <p>A practical understanding of the issues affecting education, youth, families, traders, and farmers in the constituency.</p>
+            <p>
+              A practical understanding of the issues affecting education, youth,
+              families, traders, and farmers in the constituency.
+            </p>
           </div>
         </div>
 
         <div class="card">
           <h3>Professional Profile</h3>
           <p>
-            Caleb George Oguta is presented as a disciplined, thoughtful, and visionary leader with a strong desire to serve.
-            He believes parliamentary leadership should not be about promises alone, but about honest representation, follow-through, and measurable progress.
+            Caleb George Oguta is presented as a disciplined, thoughtful,
+            and visionary leader with a strong desire to serve. He believes
+            parliamentary leadership should not be about promises alone,
+            but about honest representation, follow-through, and measurable progress.
           </p>
+
           <p>
-            <strong>Add actual qualifications here:</strong> academic background, professional experience, leadership roles, public service experience, awards, or major achievements.
+            <strong>Add actual qualifications here:</strong> academic background,
+            professional experience, leadership roles, public service experience,
+            awards, or major achievements.
           </p>
+
           <p class="small">
-            Example: Bachelor’s degree, governance experience, community leadership, policy advocacy, entrepreneurship, or civic engagement.
+            Example: Bachelor’s degree, governance experience, community leadership,
+            policy advocacy, entrepreneurship, or civic engagement.
           </p>
         </div>
       </div>
@@ -713,6 +761,7 @@
         <div class="tag">Core Values</div>
         <h2>The principles guiding the campaign</h2>
       </div>
+
       <div class="values">
         <div class="value-pill">Integrity</div>
         <div class="value-pill">Accountability</div>
@@ -727,15 +776,21 @@
     <div class="container">
       <div class="cta-banner">
         <div>
-          <h2 style="margin:0 0 12px;font-size:clamp(2rem,4vw,3rem);">Join the movement for real leadership</h2>
+          <h2 style="margin:0 0 12px;font-size:clamp(2rem,4vw,3rem);">
+            Join the movement for real leadership
+          </h2>
+
           <p style="margin:0 0 18px;">
-            Be part of a campaign built on hope, action, dignity, and transformation. Support Caleb George Oguta in building a better future for South Nyanza.
+            Be part of a campaign built on hope, action, dignity, and transformation.
+            Support Caleb George Oguta in building a better future for South Nyanza.
           </p>
+
           <div class="hero-actions">
             <a href="https://wa.me/254700000000" class="btn btn-primary">Join on WhatsApp</a>
             <a href="mailto:info@caleboguta.com" class="btn btn-secondary">Send Email</a>
           </div>
         </div>
+
         <div class="card" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.1);box-shadow:none;">
           <h3 style="color:white;">Campaign Contact</h3>
           <div class="contact-list" style="color:white;">
